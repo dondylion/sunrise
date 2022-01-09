@@ -2,6 +2,9 @@
   "name": "sunrise",
   "private": true,
   "scripts": {
+    "build:tailwind": "tailwindcss build styles/tailwind.css -o styles/tailwind.output.css",
+    "prestart": "npm run build:tailwind",
+    "prebuild": "npm run build:tailwind",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
