@@ -2,13 +2,13 @@
 import 'antd/dist/antd.css';
 import PageLayout from "../components/Layouts/Layout";
 import PageFooter from "../components/Layouts/Footer";
-import MainContent from "../components/Content/MainContent";
+import MedicalServices from './MedicalServices/medicalservices';
 
 export default function Index () {
     return(
         <div>
             <PageLayout />
-            <MainContent />
+            <MedicalServices />
             <PageFooter />
         </div>
     )
