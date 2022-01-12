@@ -1,10 +1,11 @@
 import { Collapse } from 'antd';
+import PageLayout from '../../components/Layouts/Layout';
 
 export default function MedicalServices () {
     const { Panel } = Collapse;
 
     return (
-        <>
+        <PageLayout title={"Медицинские услуги"}>
 
             <h1>Медицинские услуги</h1>
 
@@ -49,6 +50,6 @@ export default function MedicalServices () {
                 </Panel>
             </Collapse>
 
-        </>
+        </PageLayout>
     )
 }
