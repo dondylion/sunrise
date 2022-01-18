@@ -9,7 +9,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main-color': '#fab45e'
+        "main-color": "#fab45e",
+        "second-color": "#342a69",
+        "test-color-1": "#f5eeea",
+        "test-color-2": "#eecab4",
+        "test-color-3": "#a1caca"
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat'],
+        'lato': ['Lato'],
+        'garamond': ['Garamond']
       }
     },
   },
