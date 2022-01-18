@@ -10,10 +10,10 @@ export default function PageLayout ({ children, title = 'Эстетическа�
             <Head>
                 <title>{title} | Клиника Рассвет</title>
             </Head>
-            <div className="min-h-screen layout" >
-                <div className="flex flex-row justify-start shadow-lg head-logo">
+            <div className="min-h-screen layout flex flex-col justify-between" >
+                <div className="flex flex-row justify-start shadow-lg head-logo bg-main-color">
                     <div className="logo">
-                        <Link href={'/'} ><Image src={logo}></Image></Link>
+                        <Link href={'/'} ><Image src={logo} /></Link>
                     </div>
                 </div>
                     
@@ -42,38 +42,32 @@ export default function PageLayout ({ children, title = 'Эстетическа�
                     </div>
                 </div>
             </div>
-            <style jsx>
-                {`
-                    .head-logo {
-                        background-color: #fab45e;
-                        width: 12rem;
-                        height: 6rem
-                    }
-                    .layout {
-                        display: flex;
-                        flex-direction: column; 
-                        justify-content: space-between;
-                    }
-                    .logo {
-                        margin: auto auto;
-                    }
-                    .footer {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-end;
-                    }
-                    .footer-block {
-                        background-color: #342a69; 
-                        color: white; 
-                        margin-top: 50px; 
-                        font-family: Geneva, Arial, Helvetica, sans-serif;
-                    }
-                    .footer div div {
-                        margin: 1rem;
-                    }
-                `}
-            </style>
         </>
-        
+
     )
 }
+
+// .head-logo {
+//     background-color: #fab45e;
+//     width: 12rem;
+//     height: 6rem
+// }
+// .logo {
+//     margin: auto auto;
+// }
+// .footer {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+// }
+// .footer-block {
+//     background-color: #342a69;
+//     color: white;
+//     margin-top: 50px;
+//     font-family: Geneva, Arial, Helvetica, sans-serif;
+//     font-size: 0.8rem;
+// }
+// .footer div div {
+//     margin: 1rem;
+//     text-decoration: underline;
+// }
