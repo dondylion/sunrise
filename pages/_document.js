@@ -9,6 +9,14 @@ class MyDocument extends Document {
             <Main />
             <NextScript />
           </body>
+          <style jsx global>
+            {`
+              body {
+                font-family: Geneva, Arial, Helvetica, sans-serif;
+                background-color: #fff2e3;
+              }
+            `}
+          </style>
         </Html>
       )
     }
