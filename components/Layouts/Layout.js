@@ -9,19 +9,24 @@ export default function PageLayout ({ children, title = 'Эстетическа�
         <>
             <Head>
                 <title>{title} | Клиника Рассвет</title>
+                <link rel="shortcut icon" href="https://static.tildacdn.com/tild3535-6437-4561-a566-396538623461/favicon.ico" type="image/x-icon" />
             </Head>
-            <div className="min-h-screen flex flex-col justify-between" >
-                <div className="flex flex-row justify-start shadow-lg bg-test-color-2 w-48 h-24">
-                    <div className="mx-auto my-auto">
-                        <Link href={'/'} ><Image src={logo} /></Link>
+            <div className="min-h-screen flex flex-col justify-between mx-32 my-12" >
+                <div className="flex flex-row justify-around h-24 text-xl">
+                    <div className="bg-test-2 min-h-full">
+                        <Link href={'/'} className="my-auto"><a className=""><Image src={logo} /></a></Link>
                     </div>
+                    <div className="m-3"><Link href={'/cosmetology'}>Косметология</Link></div>
+                    <div className="m-3"><Link href={'/clinic'}>Клиника</Link></div>
+                    <div className="m-3"><Link href={'/promotions'}>Акции</Link></div>
+                    <div className="m-3"><Link href={'/contacts'}>Контакты</Link></div>
                 </div>
                     
 
-                <main className="bg-white">{ children }</main>
+                <main className="m-24 p-24">{ children }</main>
 
-                <div className="footer-block bg-test-color-3 mt-18">
-                    <div className="flex flex-row justify-end">
+                <div className="footer-block bg-test-3 mt-18">
+                    <div className="flex flex-row justify-end px-10 py-10">
                         <div>
                             <div className="m-3"><Link href={'/clinic'}>Клиника</Link></div>
                             <div className="m-3"><Link href={'/medicalservice'}>Медицинские услуги</Link></div>
@@ -46,28 +51,3 @@ export default function PageLayout ({ children, title = 'Эстетическа�
 
     )
 }
-
-// .head-logo {
-//     background-color: #fab45e;
-//     width: 12rem;
-//     height: 6rem
-// }
-// .logo {
-//     margin: auto auto;
-// }
-// .footer {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-// }
-// .footer-block {
-//     background-color: #342a69;
-//     color: white;
-//     margin-top: 50px;
-//     font-family: Geneva, Arial, Helvetica, sans-serif;
-//     font-size: 0.8rem;
-// }
-// .footer div div {
-//     margin: 1rem;
-//     text-decoration: underline;
-// }
