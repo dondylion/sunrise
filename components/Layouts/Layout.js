@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../images/logo.svg"
+import logo from "../../images/firmlogo.png"
 
 export default function PageLayout ({ children, title = 'Эстетическая медицина' }) {
 
@@ -18,9 +18,11 @@ export default function PageLayout ({ children, title = 'Эстетическа�
             <div className="min-h-screen flex flex-col" >
                 <div className="flex flex-row justify-between">
                     <Link href={'/'}>
-                        <a className="bg-black p-3"><Image src={logo} className=""/></a>
+                        <a className="h-auto w-32 p-3">
+                            <Image src={logo} className=""/>
+                        </a>
                     </Link>
-                    <ul className="flex flex-row justify-around my-auto text-xl">
+                    <ul className="flex flex-row justify-around my-auto text-lg">
                         <li><div className="mx-6"><Link href={'/cosmetology'}>Косметология</Link></div></li>
                         <li><div className="mx-6"><Link href={'/clinic'}>Клиника</Link></div></li>
                         <li><div className="mx-6"><Link href={'/promotions'}>Акции</Link></div></li>

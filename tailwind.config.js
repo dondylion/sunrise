@@ -18,7 +18,8 @@ module.exports = {
       fontFamily: {
         'montserrat': ['Montserrat'],
         'lato': ['Lato'],
-        'garamond': ['Garamond']
+        'garamond': ['Garamond'],
+        'verdana': ['Verdana']
       }
     },
   },

@@ -1,26 +1,23 @@
 import PageLayout from '../components/Layouts/Layout';
+import face from "../images/face5.png";
+import Image from 'next/image';
 
 export default function Index () {
 
     return (
         <PageLayout title={"Главная страница"}>
 
-            <div className="flex justify-center items-center">
-              <div className="max-w-xs rounded overflow-hidden shadow-lg my-2">
-                <img
-                  className="w-full"
-                  src="https://tailwindcss.com/img/card-top.jpg"
-                  alt="Sunset in the mountains"
-                />
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Next + Tailwind ❤️</div>
-                  <p className="text-grey-darker text-base">
-                    Next and Tailwind CSS are a match made in heaven, check out this article on how
-                    you can combine these two for your next app.
-                  </p>
-                </div>
-              </div>
+          <div className="bg-second-color p-24 text-7xl text-white flex flex-row">
+            <div className="mx-auto my-auto">
+              <p>ПРОФЕССИОНАЛЬНАЯ</p>
+              <p>КЛИНИКА</p>
+              <p>ЭСТЕТИЧЕСКОЙ</p>
+              <p>МЕДИЦИНЫ</p>
             </div>
+            <div className="h-[100%]">
+              <Image src={face}/>
+            </div>
+          </div>
 
         </PageLayout>
     )
