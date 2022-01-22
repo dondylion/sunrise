@@ -19,7 +19,8 @@ module.exports = {
         'montserrat': ['Montserrat'],
         'lato': ['Lato'],
         'garamond': ['Garamond'],
-        'verdana': ['Verdana']
+        'verdana': ['Verdana'],
+        'oswald': ['Oswald']
       }
     },
   },
