@@ -20,7 +20,8 @@ module.exports = {
         'lato': ['Lato'],
         'garamond': ['Garamond'],
         'verdana': ['Verdana'],
-        'oswald': ['Oswald']
+        'oswald': ['Oswald'],
+        'open-sans': ['Open Sans']
       }
     },
   },
